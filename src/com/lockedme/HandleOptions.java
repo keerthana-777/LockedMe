@@ -29,7 +29,8 @@ public class HandleOptions {
 					System.out.println("Please select a valid option from above.");
 				}
 			} catch (Exception e) {
-				System.out.println(e.getClass().getName());
+				//System.out.println(e.getClass().getName());
+				System.out.println("Please select a valid option from above.");
 				handleWelcomeScreen();
 			} 
 		} while (running == true);
@@ -64,6 +65,7 @@ public class HandleOptions {
 					
 					String deletionPrompt = "\nSelect index of which file to delete?"
 							+ "\n(Enter 0 if you want to delete the file)";
+					
             			System.out.println(deletionPrompt);
 				
 					int idx = sc.nextInt();
@@ -107,7 +109,8 @@ public class HandleOptions {
 					System.out.println("Please select a valid option from above.");
 				}
 			} catch (Exception e) {
-				System.out.println(e.getClass().getName());
+				System.out.println("Please select a valid option from above.");
+				//System.out.println(e.getClass().getName());
 				handleFileMenuOptions();
 			}
 		} while (running == true);

@@ -83,16 +83,16 @@ public class FileOperations {
 
 			sc.nextLine();
 			if (choice.equals("y")) {
-				System.out.println("\n\nInput content and press enter\n");
+				System.out.println("\n\nInput the content into the file and press enter\n");
 				String content = sc.nextLine();
 				Files.write(pathToFile, content.getBytes());
 				System.out.println("\nContent written to file " + fileToAdd);
-				System.out.println("Content can be read using Notepad or Notepad++");
+				System.out.println("You can read content of the file using Notepad or Notepad++");
 			}
 
 		} catch (IOException e) {
-			System.out.println("Failed to create file " + fileToAdd);
-			System.out.println(e.getClass().getName());
+			System.out.println("Failed to create file.. Try again " + fileToAdd);
+			//System.out.println(e.getClass().getName());
 		}
 	}
 
