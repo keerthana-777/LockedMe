@@ -1,5 +1,5 @@
 # LockedMe
-LockedMe - Virtual Key for Repositories
+LockedMe.com - Virtual Key for Repositories
 
 Simple Java Console based program to allows user to input menu options for 
 
